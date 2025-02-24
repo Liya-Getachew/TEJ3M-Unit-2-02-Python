@@ -12,7 +12,7 @@ import digitalio
 led = digitalio.DigitalInOut(board.LED)
 led.direction = digitalio.Direction.OUTPUT
 
-blink_time = 3000
+blink_time = 1
 
 # loop forever
 while True:
@@ -21,4 +21,4 @@ while True:
     led.value = False
     time.sleep(blink_time)
 
-    blink_time = blink_time + 1000
+    blink_time = blink_time + 1
